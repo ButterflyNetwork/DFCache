@@ -16,7 +16,7 @@
 }
 
 - (instancetype)initWithName:(NSString *)name {
-    NSString *directoryPath = [[DFDiskCache cachesDirectoryPath] stringByAppendingPathComponent:name];
+    NSString *directoryPath = [[self.class cachesDirectoryPath] stringByAppendingPathComponent:name];
     return [self initWithPath:directoryPath error:nil];
 }
 
